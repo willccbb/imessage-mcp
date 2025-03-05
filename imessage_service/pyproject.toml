@@ -1,0 +1,23 @@
+[project]
+name = "imessage-service"
+version = "0.1.0"
+description = "A MCP server project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+ "mcp>=1.1.1",
+ "pathlib>=1.0.1",
+ "pydantic>=2.10.3",
+ "python-dotenv>=1.0.1",
+ "requests>=2.32.3",
+]
+[[project.authors]]
+name = "William Brown"
+email = "williambrown97@gmail.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+imessage-service = "imessage_service:main"
